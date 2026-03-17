@@ -318,3 +318,54 @@ let startButton = document.querySelector(".start-btn");
 startButton.addEventListener("click", ()=>{
   document.querySelector("#techniques").scrollIntoView({behavior:"smooth"});
 });
+/* -------------------------
+DAILY QUOTE ROTATOR
+------------------------- */
+const dailyQuotes = [
+  "Awareness is the doorway to freedom.",
+  "Silence is your true companion.",
+  "Observe, do not judge.",
+  "The universe exists within you.",
+  "Breathe, and you exist in the present."
+];
+
+const dailyInsight = document.getElementById("daily-insight");
+function showDailyQuote(){
+  const today = new Date();
+  const index = today.getDate() % dailyQuotes.length; // rotate daily
+  dailyInsight.textContent = dailyQuotes[index];
+}
+showDailyQuote();
+
+/* -------------------------
+JOURNAL SAVE FUNCTION
+------------------------- */
+const journalBtn = document.getElementById("save-journal");
+const journalInput = document.getElementById("journal-input");
+const journalMsg = document.getElementById("journal-msg");
+
+journalBtn.addEventListener("click", ()=>{
+  const entry = journalInput.value.trim();
+  if(entry.length === 0){
+    journalMsg.textContent = "Write something before saving!";
+    return;
+  }
+  localStorage.setItem("dailyReflection", entry);
+  journalMsg.textContent = "Reflection saved! 🌸";
+  journalInput.value="";
+});
+
+/* Load saved reflection on page load */
+window.addEventListener("load", ()=>{
+  const saved = localStorage.getItem("dailyReflection");
+  if(saved){
+    journalMsg.textContent = "Last reflection: " + saved;
+  }
+});
+
+/* -------------------------
+COSMIC VISUALIZATION BUTTON
+------------------------- */
+document.getElementById("enter-cosmos")?.addEventListener("click", ()=>{
+  alert("Imagine yourself floating in infinite stars and galaxies... 🌌");
+});
