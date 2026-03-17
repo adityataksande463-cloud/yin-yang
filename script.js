@@ -179,20 +179,53 @@ behavior:"smooth"
 // PRACTICE BUTTON INTERACTION
 // --------------------------------
 
+// PRACTICE BUTTON INTERACTION
 let practiceButtons = document.querySelectorAll(".practice-btn");
 
-practiceButtons.forEach(btn => {
-
-btn.addEventListener("click", ()=>{
-
-openPracticeModal(btn.parentElement.querySelector("h3").innerText);
-
+practiceButtons.forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    const techId = btn.dataset.tech; // get data-tech attribute
+    const tech = techniques[techId];
+    openPracticeModal(tech);
+  });
 });
 
-});
 
+// OPEN MODAL FUNCTION
+function openPracticeModal(tech){
+  
+  // Remove existing modal if any
+  let existing = document.querySelector(".practice-modal");
+  if(existing) existing.remove();
 
+  // Create modal
+  let modal = document.createElement("div");
+  modal.classList.add("practice-modal");
 
+  // Steps HTML
+  let stepsHTML = "<ol>";
+  tech.steps.forEach(step=>{
+    stepsHTML += `<li>${step}</li>`;
+  });
+  stepsHTML += "</ol>";
+
+  modal.innerHTML = `
+    <div class="modal-content glass">
+      <div class="tech-animation ${tech.animation}"></div>
+      <h2>${tech.title}</h2>
+      <p>${tech.description}</p>
+      ${stepsHTML}
+      <button class="close-modal">Close</button>
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+
+  // Close button
+  modal.querySelector(".close-modal").addEventListener("click", ()=>{
+    modal.remove();
+  });
+}
 // --------------------------------
 // PRACTICE MODAL
 // --------------------------------
@@ -344,3 +377,49 @@ stepButtons.forEach(btn => {
     btn.textContent = steps.classList.contains("active") ? "Hide Steps" : "View Steps";
   });
 });
+const techniques = {
+
+1:{
+  title:"Watch the Breath",
+  description:"Observe the natural flow of your breathing without controlling it.",
+  animation:"breath",
+  steps:[
+    "Sit comfortably with spine erect.",
+    "Close your eyes and take two deep breaths.",
+    "Breathe normally and bring attention to nostrils.",
+    "Feel air coming in (cool) and going out (warm).",
+    "Simply watch your breath. Do not change it.",
+    "Continue for 5–15 minutes."
+  ]
+},
+
+2:{
+  title:"Observe Thoughts",
+  description:"Watch thoughts appear and disappear without judgment.",
+  animation:"thoughts",
+  steps:[
+    "Sit comfortably and close your eyes.",
+    "Notice thoughts appearing in the mind.",
+    "Do not follow or judge them.",
+    "Simply observe them passing by.",
+    "Return attention to your breath if mind wanders.",
+    "Continue for 5–15 minutes."
+  ]
+},
+
+3:{
+  title:"The Inner Witness",
+  description:"Become aware of the observer behind the mind.",
+  animation:"witness",
+  steps:[
+    "Sit in a comfortable position.",
+    "Close your eyes and take a deep breath.",
+    "Imagine a witness observing your thoughts.",
+    "Do not interfere with any thought or feeling.",
+    "Feel yourself as the observer, not the mind.",
+    "Remain aware for 5–15 minutes."
+  ]
+},
+
+// Add techniques 4–10 similarly
+};
