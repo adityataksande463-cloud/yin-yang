@@ -334,3 +334,13 @@ document.body.classList.add("loaded");
 // ===============================
 // END OF SCRIPT
 // ===============================
+// Stepwise toggle
+const stepButtons = document.querySelectorAll(".view-steps");
+
+stepButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const steps = btn.nextElementSibling; // the <ol class="steps">
+    steps.classList.toggle("active");
+    btn.textContent = steps.classList.contains("active") ? "Hide Steps" : "View Steps";
+  });
+});
