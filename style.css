@@ -788,3 +788,19 @@ from{transform:rotate(0deg);}
 to{transform:rotate(360deg);}
 
 }
+/* Steps initially hidden */
+.steps{
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+  transition: all 0.5s ease;
+  margin:10px 0 20px 0;
+  padding-left:20px;
+  font-size:14px;
+}
+
+/* Show steps when active */
+.steps.active{
+  max-height:500px; /* enough for all steps */
+  opacity:1;
+}
