@@ -1,265 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yin & Yang | Cosmic Meditation</title>
-<meta name="description" content="Explore meditation techniques for awareness, balance and consciousness">
-
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigyan Bhairav Tantra & Osho's Secrets</title>
+    <meta name="description" content="Discover 112 ancient meditation techniques from Vigyan Bhairav Tantra and Osho's Book of Secrets.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Vigyan Bhairav Tantra & Osho's Secrets</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#techniques">Techniques</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<!-- Background Layers -->
-<div class="background">
-  <div class="stars"></div>
-  <div class="rain"></div>
-</div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Discover the Secrets of Meditation</h2>
+            <p>Explore 112 ancient techniques from Vigyan Bhairav Tantra, enriched with Osho's profound insights.</p>
+            <a href="#techniques" class="cta-button">Get Started</a>
+        </div>
+    </section>
 
-<!-- Navbar -->
-<header>
-<nav class="navbar">
-<div class="logo">Yin & Yang</div>
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#techniques">Techniques</a></li>
-<li><a href="#practice">Practice</a></li>
-<li><a href="#philosophy">Reflection</a></li>
-</ul>
-</nav>
-</header>
+    <!-- Featured Techniques -->
+    <section id="techniques" class="techniques">
+        <div class="container">
+            <h2>Featured Techniques</h2>
+            <div class="technique-grid">
+                <div class="technique-card">
+                    <h3>Technique #1: Breath Awareness</h3>
+                    <p>Level: Beginner | Duration: 10 mins</p>
+                    <a href="technique-1.html" class="btn">Learn More</a>
+                </div>
+                <div class="technique-card">
+                    <h3>Technique #45: The Breath of Shiva</h3>
+                    <p>Level: Advanced | Duration: 20 mins</p>
+                    <a href="technique-45.html" class="btn">Learn More</a>
+                </div>
+                <!-- Add more technique cards -->
+            </div>
+        </div>
+    </section>
 
-<!-- Hero Section -->
-<section id="home" class="hero glass">
-<h1>Yin & Yang</h1>
-<p class="subtitle">A cosmic meditation platform exploring awareness and balance.</p>
-<button class="start-btn">Begin Journey</button>
-</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About the Project</h2>
+            <p>This project is a modern interpretation of the ancient Vigyan Bhairav Tantra, combined with Osho's wisdom. Our goal is to make these profound techniques accessible to everyone.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="assets/images/team1.jpg" alt="Team Member">
+                    <h3>John Doe</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/team2.jpg" alt="Team Member">
+                    <h3>Jane Smith</h3>
+                    <p>Spiritual Advisor</p>
+                </div>
+                <!-- Add more team members -->
+            </div>
+        </div>
+    </section>
 
-<!-- Techniques Section -->
-<section id="techniques" class="section">
-<h2>Meditation Techniques</h2>
-<div class="tech-grid">
-<section id="techniques" class="section">
-  <h2>Meditation Techniques</h2>
-  <div class="tech-grid">
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <h2>Join Our Community</h2>
+            <p>Connect with like-minded individuals and deepen your meditation practice.</p>
+            <form id="signup-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Join Now</button>
+            </form>
+        </div>
+    </section>
 
-    <!-- Technique 1 -->
-    <div class="tech-card glass">
-      <div class="tech-animation breath"></div>
-      <h3>1. Watch the Breath</h3>
-      <p>Observe the natural flow of your breathing.</p>
-      <button class="view-steps">View Steps</button>
-      <ol class="steps">
-        <li>Sit comfortably with spine erect.</li>
-        <li>Close your eyes and take two deep breaths.</li>
-        <li>Breathe normally and bring attention to nostrils.</li>
-        <li>Feel air coming in (cool) and going out (warm).</li>
-        <li>Simply watch your breath. Do not change it.</li>
-        <li>Continue for 5–15 minutes.</li>
-      </ol>
-      <button class="practice-btn" data-tech="1">Practice</button>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-    <!-- Technique 2 -->
-    <div class="tech-card glass">
-      <div class="tech-animation thoughts"></div>
-      <h3>2. Observe Thoughts</h3>
-      <p>Watch thoughts appear and disappear without judgment.</p>
-      <button class="view-steps">View Steps</button>
-      <ol class="steps">
-        <li>Sit comfortably and close your eyes.</li>
-        <li>Notice thoughts appearing in the mind.</li>
-        <li>Do not follow or judge them.</li>
-        <li>Simply observe them passing by.</li>
-        <li>Return attention to your breath if mind wanders.</li>
-        <li>Continue for 5–15 minutes.</li>
-      </ol>
-      <button class="practice-btn" data-tech="2">Practice</button>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Vigyan Bhairav Tantra & Osho's Secrets. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
 
-    <!-- Technique 3 -->
-    <div class="tech-card glass">
-      <div class="tech-animation witness"></div>
-      <h3>3. The Inner Witness</h3>
-      <p>Become aware of the observer behind the mind.</p>
-      <button class="view-steps">View Steps</button>
-      <ol class="steps">
-        <li>Sit in a comfortable position.</li>
-        <li>Close your eyes and breathe deeply.</li>
-        <li>Imagine a witness observing your thoughts.</li>
-        <li>Do not interfere with any thought or feeling.</li>
-        <li>Feel yourself as the observer, not the mind.</li>
-        <li>Remain aware for 5–15 minutes.</li>
-      </ol>
-      <button class="practice-btn" data-tech="3">Practice</button>
-    </div>
-
-    <!-- Technique 4 -->
-    <div class="tech-card glass">
-      <div class="tech-animation sound"></div>
-      <h3>4. Listening Meditation</h3>
-      <p>Listen to sounds without judgment.</p>
-      <button class="view-steps">View Steps</button>
-      <ol class="steps">
-        <li>Find a quiet space.</li>
-        <li>Close your eyes and focus on external sounds.</li>
-        <li>Shift attention to inner sounds.</li>
-        <li>Do not label or analyze.</li>
-        <li>Observe for 5–15 minutes.</li>
-      </ol>
-      <button class="practice-btn" data-tech="4">Practice</button>
-    </div>
-
-    <!-- Technique 5 -->
-    <div class="tech-card glass">
-      <div class="tech-animation pause"></div>
-      <h3>5. Breath Pause</h3>
-      <p>Observe the pause between inhale and exhale.</p>
-      <button class="view-steps">View Steps</button>
-      <ol class="steps">
-        <li>Sit comfortably with eyes closed.</li>
-        <li>Focus on natural breathing.</li>
-        <li>Notice the pause at the end of exhale.</li>
-        <li>Do not hold the breath, just observe.</li>
-        <li>Continue 5–15 minutes.</li>
-      </ol>
-      <button class="practice-btn" data-tech="5">Practice</button>
-    </div>
-
-    <!-- Technique 6 -->
-    <div class="tech-card glass">
-      <div class="tech-animation body"></div>
-      <h3>6. Body Awareness</h3>
-      <p>Scan your body sensations without judgment.</p>
-      <button class="view-steps">View Steps</button>
-      <ol class="steps">
-        <li>Close your eyes and focus on your feet.</li>
-        <li>Move attention slowly up the body.</li>
-        <li>Notice each body part without judgment.</li>
-        <li>Reverse and repeat as needed.</li>
-      </ol>
-      <button class="practice-btn" data-tech="6">Practice</button>
-    </div>
-
-    <!-- Technique 7 -->
-    <div class="tech-card glass">
-      <div class="tech-animation emotion"></div>
-      <h3>7. Watching Emotions</h3>
-      <p>Observe emotions like passing clouds.</p>
-      <button class="view-steps">View Steps</button>
-      <ol class="steps">
-        <li>Notice an emotion arise.</li>
-        <li>Observe physical sensations.</li>
-        <li>Do not act or judge.</li>
-        <li>Feel the emotion pass naturally.</li>
-      </ol>
-      <button class="practice-btn" data-tech="7">Practice</button>
-    </div>
-
-    <!-- Technique 8 -->
-    <div class="tech-card glass">
-      <div class="tech-animation silence"></div>
-      <h3>8. Silent Sitting</h3>
-      <p>Sit in stillness and observe inner calm.</p>
-      <button class="view-steps">View Steps</button>
-      <ol class="steps">
-        <li>Find a comfortable position.</li>
-        <li>Close eyes, breathe slowly.</li>
-        <li>Focus on stillness, do not move.</li>
-        <li>Stay aware for 5–15 minutes.</li>
-      </ol>
-      <button class="practice-btn" data-tech="8">Practice</button>
-    </div>
-
-    <!-- Technique 9 -->
-    <div class="tech-card glass">
-      <div class="tech-animation walk"></div>
-      <h3>9. Walking Awareness</h3>
-      <p>Walk slowly, feeling each step.</p>
-      <button class="view-steps">View Steps</button>
-      <ol class="steps">
-        <li>Walk slowly in a quiet space.</li>
-        <li>Feel each step and foot movement.</li>
-        <li>Notice sensations in legs and body.</li>
-        <li>Keep attention on movement and balance.</li>
-      </ol>
-      <button class="practice-btn" data-tech="9">Practice</button>
-    </div>
-
-    <!-- Technique 10 -->
-    <div class="tech-card glass">
-      <div class="tech-animation cosmos"></div>
-      <h3>10. Cosmic Awareness</h3>
-      <p>Feel yourself as part of the universe.</p>
-      <button class="view-steps">View Steps</button>
-      <ol class="steps">
-        <li>Close your eyes.</li>
-        <li>Imagine the vast cosmos around you.</li>
-        <li>Feel the connection between yourself and universe.</li>
-        <li>Observe sensations without judgment.</li>
-      </ol>
-      <button class="practice-btn" data-tech="10">Practice</button>
-    </div>
-
-  </div>
-</section>
-
-<!-- Meditation Timer Section -->
-<section id="practice" class="section glass">
-<h2>Meditation Timer</h2>
-<p>Select duration</p>
-<div class="timer-buttons">
-  <button class="timer">5</button>
-  <button class="timer">10</button>
-  <button class="timer">20</button>
-</div>
-<div class="timer-display"><span id="time">00:00</span></div>
-</section>
-
-<!-- Reflection Section -->
-<section id="philosophy" class="section">
-<h2>Reflection</h2>
-<blockquote id="quote">
-Awareness is not something you create. It is something you discover.
-</blockquote>
-</section>
-
-<!-- Footer -->
-<footer>
-<p>© 2026 Yin & Yang</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
-<!-- Cosmic Visualization -->
-<section id="cosmos" class="section glass">
-  <h2>Universe Mode</h2>
-  <p>Experience your mind in the vast cosmos.</p>
-  <div class="cosmos-animation"></div>
-  <button id="enter-cosmos">Enter Cosmic Visualization</button>
-</section>
-
-<!-- Ambient Music Player -->
-<section id="ambient" class="section glass">
-  <h2>Meditation Sounds</h2>
-  <audio id="meditation-audio" controls>
-    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b9c9b4f.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-  </audio>
-</section>
-
-<section id="daily-quote" class="section glass">
-  <h2>Daily Insight</h2>
-  <blockquote id="daily-insight"></blockquote>
-</section>
-<section id="journal" class="section glass">
-  <h2>Your Daily Reflection</h2>
-  <textarea id="journal-input" placeholder="Write your thoughts or feelings..." rows="5"></textarea>
-  <button id="save-journal">Save Reflection</button>
-  <p id="journal-msg"></p>
-</section>
